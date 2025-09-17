@@ -4,11 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIPSRV - Transformasi Digital</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    :root {
+      --blue: #0055aa;
+      --blue-dark: #002244;
+      --orange: #ff7a00;
+      --orange-light: #ffaa55;
+      --yellow: #ffd700;
+      --yellow-soft: #fff3b0;
+      --text-light: #f0f0f0;
+      --bg-dark: #0b0f1a;
+      --accent-gradient: linear-gradient(90deg, #0055aa, #ff7a00);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--accent-gradient);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      height: 60px;
+      filter: drop-shadow(0 0 5px var(--yellow));
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--yellow);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--orange-light);
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      background-color: rgba(255,255,255,0.02);
+    }
+
+    h1, h2, h3 {
+      color: var(--orange);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .highlight {
+      background: rgba(255, 215, 0, 0.1);
+      border-left: 5px solid var(--yellow);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+    }
+
+    footer {
+      background-color: var(--blue-dark);
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--yellow-soft);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="Screenshot 2025-09-03 104217.png" alt="Logo LIPSRV" class="logo" />
+    <img src="logo.png" alt="Logo LIPSRV" class="logo" />
     <nav>
       <ul>
         <li><a href="#home">Beranda</a></li>
@@ -52,8 +154,8 @@
     <p>LIPSRV adalah penyedia layanan digital yang berfokus pada strategi IT, pengembangan aplikasi, dan solusi cloud.</p>
     <h3>Manajemen</h3>
     <ul>
-      <li>CEO: Alif</li>
-      <li>CTO: Meloo</li>
+      <li>CEO: Meloo</li>
+      <li>CTO: Tim Teknologi</li>
       <li>CMO: Tim Kreatif LIPSRV</li>
     </ul>
   </section>
@@ -61,8 +163,8 @@
   <section id="contact" class="section">
     <h2>Hubungi Kami</h2>
     <p>Email: info@lipsrv.com</p>
-    <p>Telepon: +62 0878-1222-2777</p>
-    <p>Alamat: Jl. Teknologi No. 123, Banjarbaru, Indonesia</p>
+    <p>Telepon: +62 812-3456-7890</p>
+    <p>Alamat: Jl. Teknologi No. 123, Jakarta, Indonesia</p>
     <p>Media Sosial: Facebook | Twitter | Instagram</p>
   </section>
 
